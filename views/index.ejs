@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Messageboard</title>
+</head>
+
+<body>
+    <ul>
+        <% messages.map((message)=> { %>
+            <% const dateAndTime = `${message.added.getDate()}/${message.added.getMonth()}/${message.added.getFullYear()} ${message.added.getHours()}:${message.added.getMinutes()}` %>
+            <li><%= message.user %> @ <%= dateAndTime %> : <%= message.text %></li>
+        <% }) %>
+    </ul>
+    <br>
+    <a href="./new">New message</a>
+</body>
+
+</html>
