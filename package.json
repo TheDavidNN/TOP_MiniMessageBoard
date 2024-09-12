@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "deploy": "koyeb app init example-express --git github.com/TheDavidNN/TOP_MiniMessageboard --git-branch main",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +13,7 @@
   "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.20.0"
+    "express": "^4.20.0",
+    "express-async-handler": "^1.2.0"
   }
 }
